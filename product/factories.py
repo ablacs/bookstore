@@ -2,7 +2,7 @@ import factory
 
 from product.models import Product, Category
 
-class CategoryFactory(factory.django.DjanoModelFactory):
+class CategoryFactory(factory.django.DjangoModelFactory):
     title = factory.Faker('pystr')
     slug = factory.Faker('slug')
     description = factory.Faker('pystr')
